@@ -29,11 +29,11 @@
    
 ## Release history
 + 0.0.1
-  - Add version 1 folder of Employee form
+  - Add [version 1](https://github.com/y-suraj/Employee-Navigation-form/tree/main/Version%201) folder of Employee form
   - Add index.html
   - Add index.js
 + 0.0.2
-  - Add version 2 folder of Employee navigation form with extra features
+  - Add [version 2](https://github.com/y-suraj/Employee-Navigation-form/tree/main/Version%202%20with%20more%20control%20buttons) folder of Employee navigation form with extra features
   - Add index.html
   - Add index.js
 
