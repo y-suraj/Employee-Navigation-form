@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Employee Form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!--	jQuery	-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!--	bootstrap	-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!--	JPDP libs	-->
+	<script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="page-header text-center">
+			<h1>Employee Form using JPDB API</h1>
+		</div>
+
+		<form class="form-horizontal" id='empform' method="post" autocomplete="off">
+
+			<!--Employee ID -->
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="empid">Employee ID:</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="empid">
+				</div>
+			</div>
+
+			<!--Employee Name -->
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="name">Employee Name</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="name">
+				</div>
+			</div>
+
+			<!--Salary -->
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="salary">Salary</label>
+				<div class="col-sm-10">
+					<input type="digit" class="form-control" id="salary">
+				</div>
+			</div>
+
+			<!--HRA -->
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="hra">HRA</label>
+				<div class="col-sm-10">
+					<input type="number" class="form-control" id="hra">
+				</div>
+			</div>
+
+			<!--DA -->
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="da">DA</label>
+				<div class="col-sm-10">
+					<input type="number" class="form-control" id="da">
+				</div>
+			</div>
+
+			<!--Deduction -->
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="deduct">Deduction</label>
+				<div class="col-sm-10">
+					<input type="number" class="form-control" id="deduct">
+				</div>
+			</div>
+
+		</form>
+
+		<!-- CONTROL Button Group -->
+		<div class="navbar text-center" style="border:none;">
+			<button class="btn btn-primary" id='new' onclick="newForm()">NEW</button>
+			<button class="btn btn-primary" id='save' onclick="saveForm()">SAVE</button>
+			<button class="btn btn-primary" id='edit' onclick="editForm()">EDIT</button>
+			<button class="btn btn-primary" id='change' onclick="changeForm()">CHANGE</button>
+			<button class="btn btn-primary" id='reset' onclick="resetForm()">RESET</button>
+		</div>
+
+		<!-- NAVIGATION Button Group -->
+		<div class="navbar text-center" style="border:none;">
+			<button class="btn btn-primary" id='first' onclick="getFirst()">FIRST</button>
+			<button class="btn btn-primary" id='prev' onclick="getPrev()">PREV</button>
+			<button class="btn btn-primary" id='next' onclick="getNext()">NEXT</button>
+			<button class="btn btn-primary" id='last' onclick="getLast()">LAST</button>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
